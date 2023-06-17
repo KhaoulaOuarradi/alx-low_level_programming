@@ -1,7 +1,20 @@
 #include <stdio.h>
+
+/**
+ * main - entry point
+ *
+ * Return: always 0
+*/
+
 int main(void)
 {
-	int i;
+	int a = 48;
 
-	for (i=0; i<10; i++)
+	while (a < 58)
+	{
+		putchar(a);
+		a++;
+	}
+	putchar('\n');
+	return (0);
 }
