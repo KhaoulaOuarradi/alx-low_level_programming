@@ -1,4 +1,4 @@
-#icnlude "main.h"
+#include "main.h"
 /**
  * _isalpha - checking alphabetic character
  * @c: the code that will be checked
