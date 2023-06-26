@@ -2,11 +2,11 @@
 
 /**
  * _puts - printing a string, followed by a new line
- * @str: string
+ * @str: string 
  *
  * Return: void
  */
-void _puts(char *str)
+void -puts(char *str)
 {
 	int i = 0;
 
@@ -15,4 +15,5 @@ void _puts(char *str)
 		_putchar(*(str + i));
 		i++;
 	}
+	_putchar('\n')
 }
