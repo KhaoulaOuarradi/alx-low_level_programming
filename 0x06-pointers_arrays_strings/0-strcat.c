@@ -2,17 +2,21 @@
 
 /**
  * *_strcat - concatenating two strings.
- * @*dest: first string
- * @*src: second string
+ * @*dest: pointer to destination
+ * @*src: pointer to source
  *
- * Return: a pointer to the resulting string 
+ * Return: pointer to the resulting string 
  */
 char *_strcat(char *dest, char *src)
 {
-	char dest[100] = "Hello, \0";
-	char src[] = "World!\0";
+	int c, c2;
 
-	strcat (dest, src);
+	c = 0;
+	while (dest[c])
+		c++;
 
-	printf("%s\n", dest);
+	for (c2 = 0; src[c2] ; c2++)
+		dest[c++] = src[c2];
+
+	return (dest);
 }
