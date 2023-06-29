@@ -2,8 +2,8 @@
 
 /**
  * *_strcat - concatenating two strings.
- * @*dest: pointer to destination
- * @*src: pointer to source
+ * @*dest : destination
+ * @*src : source
  *
  * Return: pointer to the resulting string
  */
@@ -17,6 +17,8 @@ char *_strcat(char *dest, char *src)
 
 	for (c2 = 0; src[c2] ; c2++)
 		dest[c++] = src[c2];
+
+	dest[c] = '\0';
 
 	return (dest);
 }
