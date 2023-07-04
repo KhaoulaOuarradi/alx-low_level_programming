@@ -1,4 +1,5 @@
-i#include "main.h"
+#include "main.h"
+
 /**
  * print_chessboard - print a chess
  * @a: pointer
